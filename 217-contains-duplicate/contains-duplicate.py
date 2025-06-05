@@ -1,8 +1,30 @@
 class Solution(object):
-    def containsDuplicate(self, nums):
-        if len(set(nums)) < len(nums):
-            return True
+    def containsDuplicate(self, alist):
+        myset = set()
+        for n in alist:
+            if n in myset:
+                return True
+            myset.add(n)
         return False
+
+
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
                 
             
         
